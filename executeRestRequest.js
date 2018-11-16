@@ -59,7 +59,7 @@ function executeRequest(request, restHostName) {
 
 
 function getBodyJson(body) {
-	if (body == null) {
+	if (body === null) {
 		return null;
 	}
 	var bodyJSON = JSON.stringify(body);
