@@ -73,7 +73,7 @@ function getRestHostByName(restHostName) {
 	System.debug("Finding REST Host by name '" + name + "'");
 
 	for each (var host in allHosts) {
-		if (host.name == restHostName) {
+		if (host.name === restHostName) {
 			System.debug("Found REST Host '" + name + "'!");
 			return host;
 		}
@@ -93,5 +93,5 @@ function getResult(content) {
 }
 
 function isEmpty(input) {
-	return input == null || input == "";
+	return input === null || input === "";
 }
